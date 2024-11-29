@@ -3,39 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti</title>
+    <title>Amely Buso - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylescontatti.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
-
-    <div class="text-container">
-        <h1 class="title">Contatti</h1>
-        <p class="description"> Non esitare a contattarmi per qualsiasi informazione!</p>
+<!--NavBar-->    
+<nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Amely Buso</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Amely Buso Portfolio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">Curriculum</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="assets/pdf/Progetto_UserInterface1_BusoAmely_compressed.pdf" download>User Interface</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/Progetto_Grafica_UXUI_Buso_Amely_compressed.pdf" download>Branding</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/Progetto_Copywriting_Buso_Amely_compressed.pdf" download>Copywriting</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/ProgettoWireframing1_BusoAmely_compressed.pdf" download>Wireframing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="spacer"></div>
 
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nome *</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label">Cognome *</label>
-        <input type="surname" class="form-control" id="exampleFormControlInput2" placeholder="Cognome">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput3" class="form-label">Email *</label>
-        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Messaggio *</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <p class="description2"> *campi obbligatori</p>
+<!--Contenuto Iniziale-->
 
-      <button type="button" class="btn btn-primary">Invia</button>
+<div class="color-rectangle-container">
 
-      <Button><a href="index.html">Torna indietro</a></Button>
+  <div class="color-rectangle-container-top">
+    <div class="thumb">
+    <img src="assets/img/imgprofilo.jpg" class="img-thumbnail" alt="Immagine Profilo">
+    </div>
+    <div class="text-container text-padding">
+        <div class="text-container-vertical">
+          <h1 class="title_frs">Contattami</h1>
+          <p class="description">Numero di telefono 347.1234567<br>
+            Email: <a href="mailto:amelybuso@gmail.com">amelybuso@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="color-rectangle-container-bottom">
+  <div class="mb-3 left">
+    <label for="exampleFormControlInput1" class="form-label">Nome *</label>
+    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome" required>
+  </div>
+  <div class="mb-3 right">
+    <label for="exampleFormControlInput2" class="form-label">Cognome *</label>
+    <input type="surname" class="form-control" id="exampleFormControlInput2" placeholder="Cognome" required>
+  </div>
+  <div class="mb-3 left">
+    <label for="exampleFormControlInput3" class="form-label">Email *</label>
+    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com" required>
+  </div>
+  <div class="mb-3 full">
+    <label for="exampleFormControlTextarea1" class="form-label">Messaggio *</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+  </div>
+  <div class="mb-3 left">
+  <p class="description2"> *campi obbligatori</p>
+  </div>
+  <div class="mb-3 right">
+  <button type="button" class="btn btn-primary">Invia</button>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="white-rectangle-container white">
+  <div class="social-icons">
+    <a target="_blank" href="https://www.linkedin.com/in/amely-buso-19679519a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/img/linkedin.png" alt="Link Linkedin"></a>
+    <a target="_blank" href="https://www.instagram.com/aameli.e?igsh=Y2ZlNHJlMGwzang2&utm_source=qr"><img src="assets/img/instagram.png" alt="Link Instagram"></a>
+    <a target="_blank" href="https://www.facebook.com/amely.buso"><img src="assets/img/facebook.png" alt="Link Facebook"></a>
+    <a target="_blank" href="https://youtube.com/@queenoctavia3744?si=7P0TKt8b7t9octKg"><img src="assets/img/youtube.png" alt="Link Youtube"></a>
+    <p class="copyright">© 2024 Amely Buso</p>
+    <img src="assets/img/signature.png" class="signature" alt="Firma">
+  </div>
+  </div>
+
 
 
 </body>
+</html>
